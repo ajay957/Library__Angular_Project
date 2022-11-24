@@ -4,8 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { UserSignComponent } from './user-sign/user-sign.component';
+import { UserLoginComponent } from './user-login/user-login.component';
 
 
 const myRoute:Routes=[
@@ -16,6 +17,10 @@ const myRoute:Routes=[
   {
     path:"usersign",
     component:UserSignComponent
+  },
+  {
+    path:"userlogin",
+    component:UserLoginComponent
   }
 ]
 
@@ -23,11 +28,13 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AdminLoginComponent,
-    UserSignComponent
+    UserSignComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
