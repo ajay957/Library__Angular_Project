@@ -9,6 +9,7 @@ import { UserSignComponent } from './user-sign/user-sign.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { BookEntryComponent } from './book-entry/book-entry.component';
 import { ViewAllComponent } from './view-all/view-all.component';
+import { SearchComponent } from './search/search.component';
 
 
 const myRoute:Routes=[
@@ -31,6 +32,10 @@ const myRoute:Routes=[
   {
     path:"viewbook",
     component:ViewAllComponent
+  },
+  {
+    path:"search",
+    component:SearchComponent
   }
 ]
 
@@ -41,7 +46,8 @@ const myRoute:Routes=[
     UserSignComponent,
     UserLoginComponent,
     BookEntryComponent,
-    ViewAllComponent
+    ViewAllComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
