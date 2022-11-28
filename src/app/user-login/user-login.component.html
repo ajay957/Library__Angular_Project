@@ -5,14 +5,14 @@
                 <h1 class="text-center"><u>User Login</u></h1>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Username</label>
-                    <input type="text" class="form-control">
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Password</label>
-                    <input type="password" name="" id="" class="form-control">
+                    <input name="password" [(ngModel)]="password" type="password" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                   <a routerLink="/bookentry"><button class="btn btn-success">Login</button></a> 
+                   <a routerLink="/bookentry"><button (click)="loginValues()" class="btn btn-success">Login</button></a> 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                     <a routerLink="/usersign">go to user registration</a>
