@@ -15,6 +15,15 @@ export class AdminLoginComponent {
   {
    let data:any={name:this.name,password:this.password}
     console.log(data)
+
+
+    if (this.name=="admin" && this.password=="12345") {
+      alert("valid login")
+      
+    } else {
+      alert("invalid login")
+      
+    }
   }
 
 }
