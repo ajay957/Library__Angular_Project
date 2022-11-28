@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-all.component.css']
 })
 export class ViewAllComponent {
+  books:any=[
+    {
+      "Image":"https://orion-uploads.openroadmedia.com/sm_f7e651-tolkien-lordoftherings.jpg",
+      "title":"Lord Of Rings",
+      "auther":"Auther:Talkin"
+    },
+    {
+      "Image":"https://orion-uploads.openroadmedia.com/sm_f7e651-tolkien-lordoftherings.jpg",
+      "title":"Lord Of Rings",
+      "auther":"Auther:Talkin"
+    },
+    {
+      "Image":"https://orion-uploads.openroadmedia.com/sm_f7e651-tolkien-lordoftherings.jpg",
+      "title":"Lord Of Rings",
+      "auther":"Auther:Talkin"
+    }
+  ]
 
 }
