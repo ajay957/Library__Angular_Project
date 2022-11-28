@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./book-entry.component.css']
 })
 export class BookEntryComponent {
+  title=""
+  auther=""
+  Image=""
 
+
+  bookValues=()=>
+  {
+    let data:any= {
+      "Image":this.Image,"title":this.title,"auther":this.auther
+    }
+    console.log(data)
+
+}
 }
