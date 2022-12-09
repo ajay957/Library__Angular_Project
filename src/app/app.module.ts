@@ -12,6 +12,7 @@ import { SearchComponent } from './search/search.component';
 import { DeleteBookComponent } from './delete-book/delete-book.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
+import { NavbarUserComponent } from './navbar-user/navbar-user.component';
 
 
 const myRoute:Routes=[
@@ -55,7 +56,8 @@ const myRoute:Routes=[
     ViewAllComponent,
     SearchComponent,
     DeleteBookComponent,
-    NavBarComponent
+    NavBarComponent,
+    NavbarUserComponent
   ],
   imports: [
     BrowserModule,
